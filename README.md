@@ -31,6 +31,8 @@ pip install -r requirements.txt
 
 
 ## Usage
+[Walkthrough](https://www.loom.com/share/f35a55ee8d9749799fb62afd25135bf0?sid=018a620e-f752-464d-bca2-1d9cb89d995d)
+
 To run the application, execute:
 python application.py
 This will start the main application wit hthe UI.
