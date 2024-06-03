@@ -1,0 +1,90 @@
+.ag-theme-alpine {
+    --ag-font-size: 12px !important;
+    --ag-alpine-active-color: rgb(0, 0, 0) !important;
+    --ag-input-focus-border-color: var(--main-color) !important;
+    --ag-selected-row-background-color: var(--hover-orange) !important;
+    --ag-row-hover-color: var(--hover-orange) !important;
+  }
+  
+  .ag-theme-alpine.compact {
+    --ag-grid-size: 3px;
+    --ag-header-height: 30px;
+    box-shadow:  var(--box-shadow);
+    border-radius: 12px;
+  }
+  
+  .ag-root-wrapper {
+    border: none !important;
+    box-shadow:  var(--box-shadow);
+    border-radius: 12px;
+  }
+  
+  .ag-cell-inline-editing * {
+    height: 100% !important;
+  }
+  
+  .ag-cell-focus:not(.ag-cell-range-selected):focus-within {
+    border-radius: 5px;
+  }
+  
+  .ag-header-container {
+    background-color: white;
+  }
+  
+  .ag-header-row-column {
+    font-size: 14px;
+  }
+  
+  .ag-row, .ag-paging-panel {
+    background: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249, 0)) !important;
+  }
+  
+  
+  /* Align content vertically centered */
+  .ag-cell {
+    line-height: 40px !important;
+    height: 40px !important;
+   }
+  
+  .ag-header-cell-label {
+    justify-content: center;
+  }
+  
+  .ag-icon, .ag-checkbox-input-wrapper {
+    font-family: var(--ag-icon-font-family) !important;
+  }
+  
+  .ag-floating-bottom.ag-selectable {
+    overflow-y: hidden !important
+  }
+  
+  .ag-header-impression {
+    color: rgb(18, 183, 106);
+  }
+  .ag-header-clicks {
+    color: rgb(243, 135, 68);
+  }
+  .ag-header-spend {
+    color: rgb(238, 70, 188);
+  }
+  .ag-header-ad_sales {
+    color: rgb(250, 197, 21);
+  }
+  .ag-header-total_sales {
+    color: rgb(207, 36, 54);
+  }
+  .ag-header-ad_orders {
+    color: rgb(243, 135, 68);
+  }
+  .ag-header-cpc {
+    color: rgb(11, 165, 236);
+  }
+  .ag-header-roas {
+    color: rgb(113, 21, 250);
+  }
+  .ag-header-cvr {
+    color: rgb(20, 146, 131);
+  }
+  .ag-header-ctr {
+    color: rgb(111, 71, 134);
+  }

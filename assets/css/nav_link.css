@@ -1,0 +1,30 @@
+.nav-link.active {
+    background-color: var(--side-menu-color) !important;
+  }
+  
+  .nav-link.nav-link.active font {
+    color: var(--main-color) !important;
+  }
+  
+  .nav-link svg {
+    color: var(--side-menu-color) !important;
+  }
+  
+  .nav-link.active svg {
+    color: var(--main-color) !important;
+  }
+  
+  .nav-link:not(.active):hover {
+    background-color: var(--hover-color) !important;
+    color: black !important;
+  }
+  
+  .nav-link font {
+    color: var(--side-menu-color);
+  }
+  
+  .nav-link {
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+  }

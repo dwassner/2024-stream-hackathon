@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Deacon-Bold';
+  src: url('../fonts/Deacon-Bold.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Deacon-Medium';
+  src: url('../fonts/Deacon-Medium.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../fonts/Inter-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../fonts/Inter-Bold.ttf') format("truetype");
+}
+
+:root {
+  --main-color: #F78B27;
+  --hover-orange: #fef2e7;
+  --hover-color: #D9E0E8;
+  --bg-color: white;
+  --box-shadow: 0 0 0 2px #F0F0F0;
+  --top-menu-bg: white;
+  --side-menu-bg: #F2F5F7;
+  --side-menu-color: #485E75;
+  --ag-grid-header: #D0D0D1;
+  --border-color: #D6D6D6;
+}
+
+html * {
+  font-family: Inter-Regular !important;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.page-heading {
+  margin-top: 10px;
+  font-family: Deacon-Bold !important;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+[id*="brand_img_modal"] .form-check {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.container-main {
+  padding-left: 11rem;
+  min-width: 100%;
+}
+
+.mantine-MultiSelect-input {
+  border: none !important;
+  background-color: transparent;
+  padding-right: 0px !important;
+}
+
+
+/* Used for dropdown options selected */
+.mantine-Select-dropdown .mantine-Select-item[data-selected],
+.mantine-MultiSelect-dropdown .mantine-MultiSelect-item[data-selected] {
+  background-color: transparent;
+  color: var(--main-color);
+  border: solid 1px var(--main-color);
+}
+
+/* Used for dropdown options hover color */
+.mantine-Select-dropdown .mantine-Select-item:hover,
+.mantine-MultiSelect-dropdown .mantine-MultiSelect-item:hover {
+  background-color: var(--hover-orange);
+}
+
+/* Used for dropdown border color */
+.mantine-Select-input {
+  border-radius: .5rem;
+  border: solid 1px var(--side-menu-color);
+}
+
+/* Used for input, dropdown focus border color */
+.input:focus,
+.mantine-Select-input:focus {
+  box-shadow: 0 0 0 0.1rem var(--side-menu-color);
+}
+
+/* Used for daterange border radius */
+.mantine-DateRangePicker-input {
+  border-radius: .5rem;
+  border: 1px solid var(--side-menu-color);
+}
+ 
+.mantine-DateRangePicker-input, .mantine-DateRangePicker-icon svg {
+  color: var(--side-menu-color) !important;
+ }
+
+
+/* Used for multiselect selected values */
+.mantine-MultiSelect-defaultValue,
+.mantine-MultiSelect-value {
+  background-color: transparent;
+  color: black;
+  border: 1px solid var(--main-color);
+  border-radius: 1.5rem;
+}
+
+.mantine-MultiSelect-input:focus-within {
+  border-color: var(--main-color) !important;
+}
+
+/* Used for multiselect input */
+.mantine-MultiSelect-searchInput {
+  min-width: 30px;
+}
+
+/* Used for multiselect de-select button */
+.mantine-ActionIcon-root {
+  color: black;
+}
+
+/* Side menu divider color */
+.mantine-Divider-label::before,
+.mantine-Divider-label::after {
+  border-top: 1px solid var(--side-menu-color);
+}
+.mantine-Divider-label::before {
+  margin-right: 2px;
+}
+
+.mantine-Divider-label::after {
+  margin-left: 2px;
+}
+
+.mantine-LoadingOverlay-root svg {
+  fill: var(--main-color) !important;
+  width: 56px;
+}
+
+.small .mantine-LoadingOverlay-root svg {
+  width: 30px;
+}
+
+.group-user-profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mantine-MultiSelect-wrapper {
+  overflow: auto !important;
+}
+
+
+.custom-tooltip {
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  max-width: 400px;
+}
+
+.custom-tooltip p {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+

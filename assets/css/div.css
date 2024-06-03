@@ -1,0 +1,137 @@
+.user-profile {
+  height: 400px;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.primary {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 12px;
+  border-style: hidden;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  align-items: center;
+  overflow: visible;
+}
+
+.primary.top {
+  margin-top: 30px;
+}
+
+.message {
+  text-align: center;
+  height: 30px;
+  color: var(--main-color);
+}
+
+.top-menu {
+  background-color: var(--top-menu-bg);
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 15px;
+}
+
+.top-menu-img {
+  padding: 15px;
+  width: 160px;
+}
+
+div[id*="side-menu"] {
+  background-color: var(--side-menu-bg);
+  color: var(--side-menu-color);
+  position: fixed;
+  top: 57px;
+  height: calc(100% - 58px);;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 4px 0px 10px var(--side-menu-color);
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%);
+}
+
+.login-img {
+  width: 170px;
+  margin-bottom: 50px;
+  align-self: center;
+}
+
+.left-stack {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.authpage-text {
+  text-align: left;
+  font-family: Deacon-Bold !important;
+  font-size: 4.7rem;
+  font-weight: bold;
+  line-height: 1.1em;
+  color: black;
+}
+
+.authpage-text.suffix {
+  color: #F78B27 !important;
+}
+
+.main-body {
+  min-width: 1310px;
+  max-width: 2250px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.marketing-stream {
+  height: 1000px;
+  width: 900px;
+  margin: auto;
+}
+
+.home {
+  height: 400px;
+  width: 1000px;
+  margin: auto;
+}
+
+.auth-tbl {
+  height: 700px;
+  width: 600px;
+  margin: auto;
+}
+
+.misc-info {
+  color: red;
+  font-size: 10px;
+}
+
+.misc-info.brand-metrics {
+  line-height: 5px;
+  align-self: flex-start;
+}
+.offcanvas-title {
+  font-size: 2rem;
+  font-family: Deacon-Bold !important;
+}
