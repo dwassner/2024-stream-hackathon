@@ -19,10 +19,6 @@ def create_msg_div():
     return html.H5(id=f"{SETUP.ROUTE}_msg", className="message")
 
 
-def table_div():
-    return html.Div(id=f"{SETUP.ROUTE}_table", style={"height": "700px"})
-
-
 def create_tags_input():
     id = f"{SETUP.ROUTE}_tags_input"
     style = {"width": "275px"}
@@ -90,6 +86,7 @@ def create_alert_input():
 def top_div():
     return dbc.Stack(
         [
+            dcc.Store(id=f"{SETUP.ROUTE}_refresh"),
             create_msg_div(),
             create_tags_input(),
             dmc.Space(h="lg"),
@@ -104,6 +101,7 @@ def top_div():
             button("Save", f"{SETUP.ROUTE}_save_btn"),
         ],
         className="left-stack primary top",
+        style={"width": "100%"},
     )
 
 
@@ -112,10 +110,7 @@ def create_main_body():
         [
             create_banner(),
             dcc.Store(id=f"{SETUP.ROUTE}_slack_users", storage_type="session"),
-            dcc.Store(id=f"{SETUP.ROUTE}_refresh"),
-            top_div(),
-            dmc.Space(h="xl"),
-            loading_overlay([table_div()]),
+            loading_overlay(top_div()),
         ],
         class_name="main-body",
     )
